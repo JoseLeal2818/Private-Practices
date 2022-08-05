@@ -1,0 +1,48 @@
+@import "./../../../../../styles.scss";
+
+.backgroundTitle{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 2em;
+
+    .centerTitle{
+        width: 85%;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        flex-flow: row wrap;
+        padding-bottom: 1.3em;
+        border-bottom: 1px solid  rgb(172, 176, 168);
+
+        .title{
+            display: flex;
+            flex-grow: 1;
+            display: flex;
+            justify-content: center;
+            align-items: flex-start;
+            flex-direction: column;
+            text-align: center;
+
+            h1{
+                color: #000;
+                font-size: 3em;
+                font-weight: normal;
+                /* margin: .5em 0; */
+            }
+        }
+
+        .share{
+            display: flex;
+            flex-grow: 1;
+            justify-content: flex-end;
+            align-items: center;
+
+            button{
+                @include Pbutton(1.2em, $background-button);
+            }
+        }
+        
+    }
+}

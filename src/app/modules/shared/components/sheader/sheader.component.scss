@@ -1,0 +1,52 @@
+@import "./../../../../../styles.scss";
+
+.headerTwo {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    .centerHeaderTwo {
+        width: 85%;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        flex-flow: row wrap;
+        padding: 2em 0;
+
+        .breadcrumbs {
+            display: flex;
+            flex-grow: 1;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-flow: row wrap;
+            text-align: center;
+            color: rgb(172, 176, 168);
+
+            a {
+                text-align: center;
+                text-decoration: none;
+                color: rgb(172, 176, 168);
+
+                &:hover {
+                    text-decoration: underline;
+                }
+
+                h4 {
+                    font-weight: normal;
+                    margin: 5px 5px;
+                    color: rgb(172, 176, 168);
+                }
+            }
+        }
+
+        .searcher {
+            display: flex;
+            flex-grow: 1;
+            justify-content: center;
+            align-items: center;
+        }
+
+    }
+}

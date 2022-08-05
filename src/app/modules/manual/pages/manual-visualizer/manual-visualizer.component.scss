@@ -1,0 +1,248 @@
+@import "./../../../../../styles.scss";
+
+.backgroundHandbook {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    .centerHandbook {
+        width: 85%;
+        display: grid;
+        grid-template-columns: 1fr 4fr;
+        gap: 1em;
+
+        .backgroundInfoHandbook {
+            width: 100%;
+            display: flex;
+            max-height: 2006px;
+            justify-content: stretch;
+            align-items: center;
+            flex-direction: column;
+            /* background: pink; */
+            overflow-y: auto;
+
+            &::-webkit-scrollbar-thumb {
+                background-color: rgb(208, 4, 52);
+                border-radius: 20px;
+                border: 2px solid #f1f2f3;
+            }
+
+            .containerButtonShowHide {
+                background: rgb(208, 4, 52);
+                width: auto;
+                position: fixed;
+                left: 0;
+                top: 8em;
+
+                font-size: 2em;
+                display: none;
+
+                .floatButton {
+                    transition: all .3s ease-in-out;
+
+                    &:hover {
+                        border-bottom: none;
+                        padding-left: .3em;
+                    }
+                }
+            }
+
+            .containerInfoHandbook {
+                // background: red;
+                width: 100%;
+                display: flex;
+                justify-content: center;
+                align-items: stretch;
+                flex-direction: column;
+
+
+                .containerTitleOneBba {
+                    width: 100%;
+                    height: auto;
+                    // background: red;
+                    display: flex;
+                    flex-direction: column;
+                    justify-content: center;
+                    margin-bottom: 1em;
+
+                    h1 {
+                        margin: .5em 0 0 0;
+                        color: #000;
+                        font-weight: normal;
+                        text-align: center;
+                        font-size: 3em;
+                    }
+
+                    .navigationHandbook {
+                        height: auto;
+                        width: 100%;
+                        display: flex;
+                        justify-content: center;
+                        align-items: center;
+                        flex-flow: row wrap;
+                        margin-top: 1em;
+
+                        a {
+                            // margin: .2em 1em;
+                            min-width: 180px;
+                            @include Pbutton(.8em, $background-button);
+                        }
+                    }
+                }
+
+                p {
+                    margin: 1em 0;
+                    font-weight: bold;
+                    text-align: justify;
+                }
+
+                img {
+                    align-self: center;
+                    width: 50%;
+                    height: 50%;
+                }
+
+
+                .containerNavigationHandbook {
+                    width: 100%;
+                    display: flex;
+                    justify-content: space-between;
+                    align-items: center;
+                    flex-flow: row wrap;
+                    padding-bottom: 1em;
+                    margin-top: 2em;
+                    border-bottom: 1px solid rgb(172, 176, 168);
+
+
+                    .linksHandbook {
+                        width: auto;
+                        height: auto;
+                        display: flex;
+                        align-items: center;
+                        justify-content: center;
+                        flex-flow: row wrap;
+
+                        a{
+                            min-width: 150px;
+                            @include Pbutton(.8em, $background-button);
+                        }
+                    }
+                }
+            }
+        }
+
+        .inputContainer {
+            .hideDiv {
+                color: #fff;
+                margin-bottom: 1.2em;
+            }
+
+            .containerMenuHandBook {
+                overflow-y: auto;
+                max-height: 90vh;
+            }
+        }
+    }
+}
+
+
+.containerMenuHandBook::-webkit-scrollbar {
+    display: none;
+}
+
+/* SCROOL OF CONTAINER */
+.backgroundHandbook {
+    .centerHandbook {
+        .backgroundInfoHandbook::-webkit-scrollbar {
+            -webkit-appearance: none;
+        }
+    }
+}
+
+.backgroundHandbook {
+    .centerHandbook {
+        .backgroundInfoHandbook::-webkit-scrollbar:vertical {
+            width: 1px;
+        }
+    }
+}
+
+.backgroundHandbook {
+    .centerHandbook {
+        .backgroundInfoHandbook::-webkit-scrollbar:horizontal {
+            height: 1px;
+        }
+    }
+}
+
+// .backgroundInfoHandbook::-webkit-scrollbar-button:increment,
+// .backgroundInfoHandbook::-webkit-scrollbar-button {
+//     display: none;
+// }
+
+.backgroundHandbook {
+    .centerHandbook {
+        .backgroundInfoHandbook::-webkit-scrollbar-thumb {
+            background-color: rgb(208, 4, 52);
+            border-radius: 20px;
+            border: 2px solid #f1f2f3;
+        }
+    }
+}
+
+.backgroundHandbook {
+    .centerHandbook {
+        .backgroundInfoHandbook::-webkit-scrollbar-track {
+            border-radius: 10px;
+        }
+    }
+}
+
+
+
+.backgroundHandbook {
+    .centerHandbook {
+        .asideHandbook {
+
+            &::-webkit-scrollbar-thumb {
+                background-color: rgb(208, 4, 52);
+                border-radius: 20px;
+                border: 2px solid #f1f2f3;
+            }
+        }
+    }
+}
+
+
+
+@media only screen and (max-width: 1150px) {
+
+
+    .backgroundHandbook {
+        .centerHandbook {
+            .backgroundInfoHandbook {
+                .containerButtonShowHide {
+
+                    display: block;
+                }
+            }
+        }
+    }
+}
+
+@media only screen and (max-width: 1150px) {
+    .backgroundHandbook {
+        .centerHandbook {
+            grid-template-columns: 1fr;
+        }
+    }
+
+    .backgroundHandbook {
+        .centerHandbook {
+            .asideHandbook {
+                display: none;
+            }
+        }
+    }
+}

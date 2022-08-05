@@ -1,0 +1,48 @@
+@import "./../../../../../styles.scss";
+
+.header {
+    background: $background-color-main;
+    /* position: fixed; */
+    display: flex;
+    align-items: center;
+    /* flex-flow: row wrap; */
+    justify-content: space-between;
+
+    .logo {
+        width: auto;
+        height: 100%;
+
+        .imglogo {
+            width: auto;
+            height: 80%;
+            margin: 0 2em;
+            padding: 1em 0;
+        }
+    }
+
+    .nav {
+        width: auto;
+        /* flex-grow: 1; */
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin: 0;
+
+        .enlaces {
+            flex-grow: 1;
+        }
+    }
+}
+
+@media screen and (max-width: 340px) {
+    .header {
+        .logo {
+            .imglogo {
+                width: 105px;
+                height: 75px;
+                margin: 0 6px;
+                padding: 1em 0;
+            }
+        }
+    }
+}

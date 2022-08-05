@@ -1,0 +1,27 @@
+<app-back-home></app-back-home>
+
+<div class="container-login">
+    <form class="FormSingIn">
+        <div class="FormTitleSigIn">
+            <h2>RECOVER</h2>
+        </div>
+        <div class="FormContainerInputs">
+            <div>
+                <label for="username">Verification code</label>
+                <input type="text" formControlName="username" class="form-control" autocomplete="off" />
+            </div>
+        </div>
+        
+        <a [routerLink]="['../restore']"  class="ButtonsignIn">NEXT</a>
+        <!-- <button class="ButtonsignIn"> NEXT </button> -->
+
+        <div class="FormImgSignIn">
+            <img src="../assets/imgs/lgo-transpak-white.png" alt="">
+        </div>
+
+        <div class="infoText">
+            <button><i class="pi pi-replay" style="margin: 0 5px;"></i>Send a new code</button>
+        </div>
+    </form>
+</div>
+

@@ -1,0 +1,109 @@
+@import "./../../../../../styles.scss";
+
+.backgroundInfo {
+    width: 100%;
+    height: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    .containerInfo {
+        width: 85%;
+        height: 100%;
+        display: grid;
+        grid-template-columns: 3fr 1fr;
+        /* grid-template-rows: 1fr; */
+        grid-column-gap: 20px;
+        grid-row-gap: 0px;
+        margin-top: .8em;
+        padding-bottom: 3em;
+        border-bottom: 1px solid rgb(172, 176, 168);
+
+        section{
+            .containerManual {
+                display: flex;
+                flex-direction: column;
+                justify-content: center; 
+                align-items: center;
+                border-bottom: 1px solid rgb(172, 176, 168);
+                padding: 1em 0em;
+                margin-bottom: 1em;
+
+                h2{
+                    align-self: flex-start;
+                    font-weight: normal;
+                    color: rgb(8, 108, 148);
+                }
+                p{
+                    margin: .7em 0;
+                    font-weight: bold;
+                    text-align: justify;
+                }
+                img{
+                    width: 60%;
+                    height: 60%;
+                    margin: 1em 0em;
+                }
+                a{
+                    align-self: flex-end;
+                    text-decoration: none;
+                    font-weight: bold;
+                    font-size: 1.4em;
+                    color: rgb(208, 4, 52);
+
+                    &:hover{
+                        text-decoration: underline;
+                    }
+                }
+            } 
+
+           
+            .backgroundImageBba{
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                margin: 2em 0;
+
+                
+            }
+            .containerReadMore{
+                width: 100%;
+                padding: 0em 0 1.6em 0;
+                /* background: red; */
+                display: flex;
+                justify-content: flex-end;
+                align-items: center;
+                margin-bottom: 2em;
+                border-bottom: 1px solid rgb(172, 176, 168);
+                
+                
+            }
+          
+
+        }
+
+
+
+        aside {
+            display: flex;
+            justify-content: center;
+            width: 100%;
+
+            .containerAsideBba {
+                height: 100%;
+                display: flex;
+                justify-content: space-between;
+                flex-direction: column;
+            }
+        }
+    }
+}
+
+
+@media only screen and (max-width: 750px) {
+    .backgroundInfo {
+        .containerInfo {
+            grid-template-columns: 1fr;
+        }
+    }
+}

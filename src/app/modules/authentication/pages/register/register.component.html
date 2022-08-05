@@ -1,0 +1,41 @@
+<app-back-home></app-back-home>
+
+<div class="container-login">
+    <form class="FormSingIn">
+        <div class="FormTitleSigIn">
+            <h2>REGISTER</h2>
+        </div>
+        <div class="FormContainerInputs">
+            <div>
+                <label for="username">Username</label>
+                <input type="text" formControlName="username" class="form-control" autocomplete="off" />
+            </div>
+            <div>
+                <label for="password">Password</label>
+                <input type="password" formControlName="password" class="form-control" autocomplete="off" />
+            </div>
+            <div>
+                <label for="password">Confirm Password</label>
+                <input type="password" formControlName="password" class="form-control" autocomplete="off" />
+            </div>
+
+            <div>
+                <label>
+                    <input type="checkbox" id="showPassword" formControlName="showPassword" class="form-control">
+                    Terms and Conditions
+                </label>
+            </div>
+        </div>
+        
+        <a routerLink="home"  class="ButtonsignIn">SIGN IN</a>
+        <!-- <button class="ButtonsignIn"> SIGN IN </button> -->
+
+        <div class="FormImgSignIn">
+            <img src="../assets/imgs/lgo-transpak-white.png" alt="">
+        </div>
+
+        <div class="returnLogin">
+            <a routerLink="auth" >Go back to login page</a>
+        </div>
+    </form>
+</div>

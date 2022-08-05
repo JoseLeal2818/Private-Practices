@@ -1,0 +1,125 @@
+@import "./../../../../../styles.scss";
+
+
+.backgroundInfo {
+    width: 100%;
+    height: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    .containerInfo {
+        width: 85%;
+        height: 100%;
+        display: grid;
+        grid-template-columns: 3fr 1fr;
+        /* grid-template-rows: 1fr; */
+        grid-column-gap: 20px;
+        grid-row-gap: 0px;
+        margin-top: .8em;
+        padding-bottom: 3em;
+        border-bottom: 1px solid rgb(172, 176, 168);
+
+        section{
+            .containerDate{
+                width: 100%;
+                margin-bottom: 1em;
+
+                h4{
+                    margin: .2em 0;
+                    color: rgb(172, 176, 168);
+                }
+
+                &:nth-child(2){
+                    font-style: italic;
+                }
+            }
+
+            
+            .containerParagraph{
+                p{
+                    margin: 1.5em 0;
+                    font-weight: bold;
+                    text-align: justify;
+                }
+            } 
+
+            .backgroundImage{
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                margin: 2em 0;
+
+                img{
+                    width: 60%;
+                    height: 60%;
+                 }
+            }
+        }
+
+
+
+        aside {
+            display: flex;
+            justify-content: center;
+            width: 100%;
+
+            .containerAside {
+                height: 100%;
+                display: flex;
+                justify-content: space-between;
+                flex-direction: column;
+
+                .menuAside {
+                    width: 100%;
+
+                    .titleAside {
+                        margin-bottom: 1em;
+
+                        h2 {
+                            /* text-align: center; */
+                            font-weight: normal;
+                            font-size: 2em;
+                        }
+                    }
+
+                    .linksAside ul {
+                        padding: 0;
+                        margin: 0;
+                        list-style-type: none;
+
+                        li {
+                            /* margin: .2em 0; */
+                            padding: .4em 0;
+
+                            a {
+                                text-decoration: none;
+                                width: auto;
+                                height: 100%;
+                                color: rgb(208, 4, 52);
+                                font-weight: 600;
+                                padding: .4em 0;
+
+                                &:hover{
+                                    text-decoration: underline;
+                                }
+                            }
+                        }
+                        
+                    }
+                }
+            }
+        }
+
+    }
+}
+
+
+
+@media only screen and (max-width: 750px) {
+    .backgroundInfo {
+        .containerInfo {
+            grid-template-columns: 1fr;
+        }
+    }
+}

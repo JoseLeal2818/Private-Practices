@@ -1,0 +1,72 @@
+.containerMenuHandBook {
+    overflow-y: auto;
+    /* height: 100%; */
+    max-height: 2006px;
+    /* border-right: 1px solid black; */
+    margin: 0;
+    padding: 0;
+
+    .cardAsideHandBook {
+        display: flex;
+        justify-content: center;
+        align-items: flex-start;
+        flex-direction: column;
+        padding: 1em;
+        border-bottom: 1px solid rgb(172, 176, 168);
+        
+        h3 {
+            font-size: 1.1em;
+            color: #000;
+        }
+        a {
+            padding: 0 0 0 1.3em;
+            margin: 3px 0;
+            text-decoration: none;
+            color: #000;
+            font-weight: bold;
+
+            &:hover {
+                text-decoration: underline;
+                color: rgb(208, 4, 52);
+                font-weight: bold;
+            }
+            
+        }
+        
+    }
+}
+
+.containerMenuHandBook::-webkit-scrollbar {
+    -webkit-appearance: none;
+}
+
+.containerMenuHandBook::-webkit-scrollbar:vertical {
+    width:1px;
+}
+
+.containerMenuHandBook::-webkit-scrollbar-button:increment,
+.containerMenuHandBook::-webkit-scrollbar-button {
+    display: none;
+}
+
+.containerMenuHandBook::-webkit-scrollbar:horizontal {
+    height: 2px;
+}
+
+.containerMenuHandBook::-webkit-scrollbar-thumb {
+    background-color: rgba(134, 134, 134, 0.1);
+    border-radius: 20px;
+    /* border: 2px solid #f1f2f3; */
+}
+
+.containerMenuHandBook::-webkit-scrollbar-track {
+    border-radius: 10px;
+}
+
+
+// MEDIAQUERIES OF MENU
+@media only screen and (max-width: 1150px) {
+    .containerMenuHandBook {
+        max-height: 100vh;
+    }
+}

@@ -1,0 +1,81 @@
+<app-pheader></app-pheader>
+<app-sheader></app-sheader>
+<!-- <app-app-title></app-app-title> -->
+
+<div class="backgroundHandbook">
+   <div class="centerHandbook">
+      <div class="asideHandbook">
+         <app-menu></app-menu>
+      </div>
+
+      <div class="backgroundInfoHandbook">
+         <div class="containerButtonShowHide">
+            <p-button type="button" (click)="visibleSidebar1 = true" icon="pi pi-align-left" pTooltip="Menu"
+               class="floatButton"></p-button>
+         </div>
+
+         <div class="containerInfoHandbook">
+            <div class="containerTitleOneBba">
+               <h1>Crate Marker new version</h1>
+               <div class="navigationHandbook">
+                  <a href="">COPY LINK</a>
+                  <a href="">PREVIOUS</a>
+                  <a href="">NEXT</a>
+               </div>
+            </div>
+
+
+            <p>
+               Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusamus saepe vitae, maxime quos odio
+               voluptatibus
+               alias non architecto aspernatur natus minima repellat odit itaque cupiditate reprehenderit laborum? Vitae
+               delectus aut eveniet modi nulla, commodi quaerat natus ea. Aliquam, fugit tempora? Eligendi harum
+               corrupti
+               ipsam! Atque cupiditate saepe esse vero facilis, quaerat repellendus optio omnis itaque
+            </p>
+            <p>
+               Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusamus saepe vitae, maxime quos odio
+               voluptatibus
+               alias non architecto aspernatur natus minima repellat odit itaque cupiditate reprehenderit laborum? Vitae
+               delectus aut eveniet modi nulla, commodi quaerat natus ea. Aliquam, fugit tempora? Eligendi harum
+               corrupti
+               ipsam! Atque cupiditate saepe esse vero facilis, quaerat repellendus optio omnis itaque
+            </p>
+            <p>
+               Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusamus saepe vitae, maxime quos odio
+               voluptatibus
+               alias non architecto aspernatur natus minima repellat odit itaque cupiditate reprehenderit laborum? Vitae
+               delectus aut eveniet modi nulla, commodi quaerat natus ea. Aliquam, fugit tempora? Eligendi harum
+               corrupti
+               ipsam! Atque cupiditate saepe esse vero facilis, quaerat repellendus optio omnis itaque
+            </p>
+
+
+            <img src="../assets/imgs/img.jpeg" alt="">
+
+
+            <div class="containerNavigationHandbook">
+               <div class="linksHandbook">
+                  <a href="">PREVIOUS</a>
+                  <a href="">NEXT</a>
+               </div>
+               <app-app-satisfaction></app-app-satisfaction>
+            </div>
+         </div>
+
+
+      </div>
+
+
+      <p-sidebar [(visible)]="visibleSidebar1" [baseZIndex]="10000" class="inputContainer">
+         <div class="hideDiv">|</div>
+         <div class="containerMenuHandBook">
+            <app-menu></app-menu>
+         </div>
+      </p-sidebar>
+
+   </div>
+</div>
+
+<app-sfooter></app-sfooter>
+<app-pfooter></app-pfooter>

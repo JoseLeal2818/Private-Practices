@@ -1,0 +1,156 @@
+@import "./../../../../../styles.scss";
+
+.backgroundInfo {
+    width: 100%;
+    height: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    .containerInfo {
+        width: 85%;
+        height: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        margin-top: .8em;
+        padding-bottom: 2em;
+        border-bottom: 1px solid rgb(172, 176, 168);
+
+        section {
+            width: 100%;
+            height: auto;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            margin: 2em 0;
+
+            .containerTSOverview {
+                width: 100%;
+                height: auto;
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                align-items: center;
+
+                h2 {
+                    width: 100%;
+                    margin-bottom: .5em;
+                }
+
+                p {
+                    width: 100%;
+                    line-height: 1.5em;
+                    text-align: justify;
+                    margin-bottom: .5em;
+                }
+            }
+
+            .containerCSOverview {
+                width: 100%;
+                display: grid;
+                grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+                grid-column-gap: 3em;
+                grid-row-gap: 1em;
+                margin: 2em 0;
+            }
+
+            .containerFSOverview {
+                width: 100%;
+                display: flex;
+                align-items: center;
+                justify-content: flex-end;
+                padding: 1em 0;
+                border-bottom: 1px solid rgb(172, 176, 168);
+
+                a {
+                    text-decoration: none;
+                    @include Pbutton(1.2em, $background-button);
+                }
+            }
+
+        }
+
+        aside {
+            display: flex;
+            justify-content: flex-start;
+            align-items: center;
+            width: 100%;
+
+            .containerFooterO {
+                height: 100%;
+                display: flex;
+                justify-content: space-between;
+                flex-direction: column;
+
+                .menuFooterO {
+                    width: 100%;
+
+                    .titleFooterO {
+                        width: auto;
+                        align-self: flex-start;
+                        margin-bottom: .5em;
+
+                        h2 {
+                            text-align: center;
+                            font-weight: normal;
+                            font-size: 2em;
+                        }
+
+                    }
+
+                    .linksFooterO {
+                        ul {
+                            padding: 0;
+                            margin: 0;
+                            list-style-type: none;
+                            li {
+                                padding: .4em 0;
+                                a {
+                                    text-decoration: none;
+                                    width: auto;
+                                    height: 100%;
+                                    color: rgb(208, 4, 52);
+                                    font-weight: 600;
+                                    padding: .4em 0;
+
+                                    &:hover{
+                                        text-decoration: underline;
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+
+
+@media only screen and (max-width: 1000px) {
+    .backgroundInfo {
+        .containerInfo {
+            div:nth-child(1) {
+                .containerCSOverview {
+                    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+                }
+            }
+        }
+    }
+}
+
+@media only screen and (max-width: 340px) {
+    .backgroundInfo {
+        .containerInfo {
+            div:nth-child(1) {
+                .containerCSOverview {
+                    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+                }
+            }
+        }
+    }
+}

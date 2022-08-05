@@ -1,0 +1,18 @@
+<div style="width: 100%;" class="header">
+    <a [routerLink]="['/dashboard']" class="logo">
+        <img src="../assets/imgs/lgo-transpak-white.png" alt="" class="imglogo">
+    </a>
+    <div class="p-d-flex p-jc-center p-ai-center nav">
+        <p-menubar [model]="items" class="enlaces"></p-menubar>
+        <p-button type="button" (click)="visibleSidebar2 = true" icon="pi pi-cog"></p-button>
+    </div>
+
+</div>
+<p-sidebar [(visible)]="visibleSidebar2" position="right">
+    <h1 style="font-weight:normal; margin-bottom: 1.5em; color: transparent;">|</h1>
+
+    <a routerLink="users">Users</a>
+    <a routerLink="../auth">Logout</a>
+
+</p-sidebar>
+

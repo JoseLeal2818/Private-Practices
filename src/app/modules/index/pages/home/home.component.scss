@@ -1,0 +1,424 @@
+@import "./../../../../../styles.scss";
+
+/*  BANNER OF HOME */
+.bannerBackground {
+    width: 100%;
+    height: 40em;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-flow: row wrap;
+    background-image: url('../../../../../assets/imgs/bg-banner.jpg');
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+
+    .bannerContainer {
+        width: 85%;
+        height: 100%;
+        display: flex;
+        justify-content: start;
+        align-items: center;
+
+        .bannerInfo {
+            width: 35em;
+            height: 100%;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: start;
+
+            .search-input {
+                width: 100%;
+                margin: 2em 0;
+                border: .5px solid black;
+                border-radius: .5em;
+            }
+
+            h1 {
+                color: white;
+                font-weight: normal;
+                font-size: 2.2em;
+                font-family: 'Arial';
+            }
+
+            p {
+                color: white;
+                font-family: 'Arial';
+                font-size: 1.2em;
+            }
+        }
+    }
+}
+
+/* BROWSER OF HOME  */
+.backgroundBrowser {
+    width: 100%;
+    /* height: 20em; */
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    padding: 1em 0;
+
+    .titleBrowser {
+        width: 85%;
+        flex: 25;
+        margin: 1.8em 0 1em 0;
+        display: flex;
+        justify-content: start;
+        align-items: center;
+        font-family: 'Arial';
+        color: rgb(208, 4, 52);
+    }
+
+    .infoBrowser {
+        width: 80%;
+        flex: 70;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: stretch;
+        margin: 1em 0 0 0;
+        box-sizing: border-box;
+    }
+}
+
+// LATEST OF HOME 
+.backgroundLatest {
+    width: 100%;
+    height: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: rgb(248, 244, 244);
+    padding-bottom: 2em;
+
+    .containerLatest {
+        width: 85%;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: center;
+
+        .titleLatest {
+            margin: 1.8em 0 1em 0;
+            width: 100%;
+
+            h2 {
+                font-family: 'Arial';
+                color: rgb(208, 4, 52);
+            }
+        }
+
+        .infoLatest {
+            width: 100%;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+
+            .textoLatest {
+                /* flex-grow: 1; */
+                width: auto;
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                align-items: center;
+
+                h3 {
+                    align-self: flex-start;
+                    margin: 0;
+                }
+
+                p {
+                    text-align: justify;
+                    font-weight: bold;
+                    margin: .6em 0;
+                }
+            }
+
+            .imgLatest {
+                /* flex:50; */
+                flex-grow: 1;
+                height: 100%;
+                /* padding: 1em 2em; */
+                display: flex;
+                align-items: center;
+                justify-content: center;
+
+                img {
+                    width: 500px;
+                    height: 100%;
+                    margin: 0 1em;
+                }
+            }
+        }
+    }
+}
+
+
+// BROWSE USEFUL
+.backgroundBrowseUseful {
+    width: 100%;
+    height: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin: 3em 0;
+
+    .titleNavBrowseUseful {
+        width: 85%;
+        font-family: 'Arial';
+        color: rgb(208, 4, 52);
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+
+        h2 {
+            width: 100%;
+            font-family: 'Arial';
+            margin: 0em 0 1em 0;
+            color: rgb(208, 4, 52);
+        }
+    }
+
+    .CardBrowseUseful {
+        width: 85%;
+        /* border: 1px dotted #000; */
+
+        .linksBrowseUsefull {
+            width: 100%;
+            /* height: 300px; */
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+            gap: 1em;
+            /* background: gray; */
+
+            a {
+                text-decoration: none;
+                color: #000;
+                text-align: center;
+                font-family: 'Arial';
+                font-size: 1.1em;
+                cursor: pointer;
+                transition: all .3s ease-in-out;
+                border-radius: 13px;
+                padding: .7em 0;
+                display: flex;
+                align-items: center;
+                /* margin: 0 1em; */
+                justify-content: center;
+                transition: all .2s ease-in-out;
+                border: 2px solid rgb(208, 4, 52);
+
+                &:hover {
+                    color: #fff;
+                    background: rgb(208, 4, 52);
+                    box-shadow: 0px 3px 4px 1px rgba(0, 0, 0, .3),
+                        0px 3px 4px 1px rgba(0, 0, 0, .3),
+                        0px 3px 4px 1px rgba(0, 0, 0, .3);
+                }
+            }
+        }
+
+        .infoBrowseUseful {
+            width: 100%;
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+            gap: 2.2em;
+            margin: 2em 0em;
+        }
+    }
+}
+
+
+.backgroundGethelp {
+    width: 100%;
+    height: 25em;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-flow: row wrap;
+    background-image: url('../../../../../assets/imgs/bg-tpbuilding.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+
+    .containerGethelp {
+        width: 85%;
+        height: 100%;
+        display: flex;
+        justify-content: start;
+        align-items: center;
+
+        .infoGethelp {
+            width: 35em;
+            height: 100%;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: start;
+
+            h1 {
+                color: white;
+                font-weight: normal;
+                margin: .5em 0;
+                font-size: 2.2em;
+                font-family: 'Arial';
+            }
+
+            p {
+                color: white;
+                font-family: 'Arial';
+                font-size: 1.2em;
+                margin: .1em 0;
+            }
+
+            .buttonGethelp {
+                @include Pbutton(1.2em, $background-button);
+            }
+
+        }
+    }
+}
+
+
+// -----------------------------------------------------
+
+// MEDIAQUERIES OF LATEST 
+@media only screen and (max-width: 1340px) {
+    .backgroundLatest {
+        .containerLatest {
+            .infoLatest {
+                flex-flow: row wrap;
+            }
+        }
+    }
+}
+
+@media only screen and (max-width: 675px) {
+    .backgroundLatest {
+        .containerLatest {
+            .infoLatest {
+                .imgLatest {
+                    img {
+                        width: 400px;
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media only screen and (max-width: 510px) {
+    .backgroundLatest {
+        .containerLatest {
+            .infoLatest {
+                .imgLatest {
+                    img {
+                        width: 350px;
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media only screen and (max-width: 445px) {
+    .backgroundLatest {
+        .containerLatest {
+            .infoLatest {
+                .imgLatest {
+                    img {
+                        width: 300px;
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media only screen and (max-width: 415px) {
+    .backgroundLatest {
+        .containerLatest {
+            .infoLatest {
+                .imgLatest {
+                    img {
+                        width: 280px;
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media only screen and (max-width: 350px) {
+    .backgroundLatest {
+        .containerLatest {
+            .infoLatest {
+                .imgLatest {
+                    img {
+                        width: 220px;
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media only screen and (max-width: 315px) {
+    .backgroundLatest {
+        .containerLatest {
+            .infoLatest {
+                .imgLatest {
+                    img {
+                        width: 200px;
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media only screen and (max-width: 295px) {
+    .backgroundLatest {
+        .containerLatest {
+            .infoLatest {
+                .imgLatest {
+                    img {
+                        width: 180px;
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media only screen and (max-width: 250px) {
+    .backgroundLatest {
+        .containerLatest {
+            .infoLatest {
+                .imgLatest {
+                    img {
+                        width: 120px;
+                    }
+                }
+            }
+        }
+    }
+}
+
+// -----------------------------------------------------
+
+// 
+@media only screen and (max-width: 400px) {
+    .backgroundBrowseUseful {
+        .CardBrowseUseful {
+            .infoBrowseUseful {
+                grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+            }
+        }
+    }
+}

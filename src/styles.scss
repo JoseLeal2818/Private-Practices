@@ -1,0 +1,77 @@
+/* You can add global styles to this file, and also import other style files */
+@import  "~primeicons/primeicons.css";
+@import  "~primeng/resources/themes/saga-blue/theme.css";
+@import  "~primeng/resources/primeng.min.css";
+@import  "~primeflex/primeflex.css";
+
+*{
+    margin: 0;padding: 0;box-sizing: border-box;
+    font-family: 'Arial';
+
+    &::-webkit-scrollbar {
+        width: 10px;     /* Tamaño del scroll en vertical */
+        height: 8px;    /* Tamaño del scroll en horizontal */
+    }
+
+    &::-webkit-scrollbar-thumb {
+        background: rgba(208, 4, 52, .6);
+        border-radius: 10px;
+    }
+    
+    /* Cambiamos el fondo y agregamos una sombra cuando esté en hover */
+    &::-webkit-scrollbar-thumb:hover {
+        background: rgba(208, 4, 52, .9);
+    }
+    
+    /* Cambiamos el fondo cuando esté en active */
+    &::-webkit-scrollbar-thumb:active {
+        background-color: #999999;
+    }
+    
+}
+
+
+// Application-wide colors
+$background-color-main: rgb(208, 4, 52);
+$background-color-secondary: rgb(8, 108, 148);
+
+// Button properties
+$background-button: rgb(208, 4, 52);
+$background-button-two: rgb(8, 108, 148);
+$border-radius-button: 13px;
+$transition-button:  all .3s ease-in-out;
+// -----------------------
+
+// Fonts (1.2em)
+$font-family-button: 'Arial';
+
+// General shades
+$shadows-buttons: 0px 3px 4px 1px rgba(0, 0, 0, .3),
+                  0px 3px 4px 1px rgba(0, 0, 0, .3),
+                  0px 3px 4px 1px rgba(0, 0, 0, .3);
+$shadows-cards: 0px 1px 5px 1px rgb(0, 0,0, 20%), 
+                0px 1px 5px 1px rgb(0, 0,0, 20%), 
+                0px 1px 5px 1px rgb(0, 0,0, 20%);
+// ------------------------
+
+
+// Mixins for not to repeat code
+@mixin Pbutton($fontsize,$background) {
+    border: 0;
+    color: white;
+    margin: .8em .3em;
+    cursor: pointer;
+    padding: .8em 1.2em;
+    font-size: $fontsize;
+    text-decoration: none;
+    text-align: center;
+    transition: $transition-button;
+    background: $background;
+    font-family: $font-family-button;   
+    border-radius: $border-radius-button;
+
+    &:hover{
+        box-shadow: $shadows-buttons;
+    }
+}
+

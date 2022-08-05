@@ -1,0 +1,39 @@
+
+<app-back-home></app-back-home>
+
+<div class="container-login">
+    <form class="FormSingIn">
+        <div class="FormTitleSigIn">
+            <h2>RESTORE</h2>
+        </div>
+        <div class="FormContainerInputs">
+            <div>
+                <label for="username">New password</label>
+                <input type="text" formControlName="username" class="form-control" autocomplete="off" />
+            </div>
+            <div>
+                <label for="password">Confirm new password</label>
+                <input type="password" formControlName="password" class="form-control" autocomplete="off" />
+            </div>
+
+            <div>
+                <label>
+                    <input type="checkbox" id="showPassword" formControlName="showPassword" class="form-control">
+                    Show Password
+                </label>
+            </div>
+        </div>
+        
+        <a routerLink="home"  class="ButtonsignIn">CHANCE PASSWORD</a>
+        <!-- <button class="ButtonsignIn"> CHANCE PASSWORD </button> -->
+
+        <div class="FormImgSignIn">
+            <img src="../../../../assets/imgs/lgo-transpak-white.png" alt="">
+        </div>
+
+        <div class="ForgotPass">
+            <a routerLink="auth" >Go back to login page</a>
+        </div>
+    </form>
+</div>
+
